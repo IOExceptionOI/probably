@@ -202,6 +202,13 @@ class AbortInstr(InstrClass):
 class QueryInstr(InstrClass):
     def __str__(self) -> str:
         return "!Query;"
+@attr.s
+class sample_predefined_functions(InstrClass):
+    func = attr.ib()
+    args = attr.ib()
+
+    def __str__(self) -> str:
+        return f"!Sample[{self.func}, {self.args}]"
 
 Query = Union[ProbabilityQueryInstr, ExpectationInstr, PlotInstr, PrintInstr,
               OptimizationQuery]

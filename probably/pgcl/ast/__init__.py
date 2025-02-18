@@ -125,7 +125,7 @@ from .expressions import (FunctionCallExpr,BernoulliExpr, BinomialExpr, Binop, B
                           GeometricExpr, IidSampleExpr, LogDistExpr,
                           NatLitExpr, PoissonExpr, RealLitExpr, SubstExpr,
                           TickExpr, Unop, UnopExpr, VarExpr, expr_str_parens)
-from .instructions import (AbortInstr, QueryInstr,AsgnInstr, ChoiceInstr, ExpectationInstr, IfInstr,
+from .instructions import (sample_predefined_functions,AbortInstr, QueryInstr,AsgnInstr, ChoiceInstr, ExpectationInstr, IfInstr,
                            Instr, InstrClass, LoopInstr, ObserveInstr,
                            OptimizationQuery, OptimizationType, PlotInstr,
                            PrintInstr, ProbabilityQueryInstr, Query, SkipInstr,
