@@ -119,13 +119,13 @@ Otherwise use corresponding Union types instead.
 
 from .ast import Node, Var
 from .declarations import DeclClass, ConstDecl, Decl, ParameterDecl, VarDecl
-from .expressions import (BernoulliExpr, BinomialExpr, Binop, BinopExpr,
+from .expressions import (FunctionCallExpr,BernoulliExpr, BinomialExpr, Binop, BinopExpr,
                           BoolLitExpr, CategoricalExpr, CUniformExpr,
                           DistrExpr, DUniformExpr, Expr, ExprClass,
                           GeometricExpr, IidSampleExpr, LogDistExpr,
                           NatLitExpr, PoissonExpr, RealLitExpr, SubstExpr,
                           TickExpr, Unop, UnopExpr, VarExpr, expr_str_parens)
-from .instructions import (AsgnInstr, ChoiceInstr, ExpectationInstr, IfInstr,
+from .instructions import (AbortInstr, QueryInstr,AsgnInstr, ChoiceInstr, ExpectationInstr, IfInstr,
                            Instr, InstrClass, LoopInstr, ObserveInstr,
                            OptimizationQuery, OptimizationType, PlotInstr,
                            PrintInstr, ProbabilityQueryInstr, Query, SkipInstr,

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "probably"
-version = "4.0.1"
+version = "4.0.2"
 description = ""
 authors = ["Philipp Schröer <mail@philworld.de>"]
 

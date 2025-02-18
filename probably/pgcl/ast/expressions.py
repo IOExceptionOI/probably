@@ -495,7 +495,7 @@ def expr_str_parens(expr: ExprClass) -> str:
     else:
         return f'({expr})'
 @attr.s
-class FuctionCallExpr(ExprClass):
+class FunctionCallExpr(ExprClass):
     """
     A function call is an expression.
     """
