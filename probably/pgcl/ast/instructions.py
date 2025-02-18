@@ -194,6 +194,14 @@ class PlotInstr(InstrClass):
             output += f", {str(self.term_count)}"
         return f"!Plot[{output}]"
 
+@attr.s
+class AbortInstr(InstrClass):
+    def __str__(self) -> str:
+        return "!Abort;"
+@attr.s
+class QueryInstr(InstrClass):
+    def __str__(self) -> str:
+        return "!Query;"
 
 Query = Union[ProbabilityQueryInstr, ExpectationInstr, PlotInstr, PrintInstr,
               OptimizationQuery]

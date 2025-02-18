@@ -494,6 +494,13 @@ def expr_str_parens(expr: ExprClass) -> str:
         return str(expr)
     else:
         return f'({expr})'
+@attr.s
+class FuctionCallExpr(ExprClass):
+    """
+    A function call is an expression.
+    """
+    func: str = attr.ib()
+    args: List[Expr] = attr.ib()
 
 
 DistrExpr = Union[DUniformExpr, CUniformExpr, BernoulliExpr, GeometricExpr,
